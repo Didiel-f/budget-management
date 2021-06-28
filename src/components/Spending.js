@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types'
+
 
 export const Spending = ({ spending }) => {
     
@@ -11,4 +13,8 @@ export const Spending = ({ spending }) => {
             </p>
         </li>
     )
+}
+
+Spending.propTypes = {
+    spending: PropTypes.object.isRequired
 }

@@ -18,5 +18,5 @@ export const SpendingList = ({ spendingHistory }) => {
 }
 
 SpendingList.propTypes = {
-    gastos: PropTypes.array.isRequired
+    spendingHistory: PropTypes.array.isRequired
 }

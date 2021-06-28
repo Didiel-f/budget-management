@@ -1,5 +1,6 @@
 import React from 'react';
 import { checkBudget } from '../helpers';
+import PropTypes from 'prop-types'
 
 
 export const BudgetManager = ({ budget, wallet }) => {
@@ -13,4 +14,9 @@ export const BudgetManager = ({ budget, wallet }) => {
             </div>
         </>
     )
+}
+
+BudgetManager.propTypes = {
+    budget: PropTypes.number.isRequired,
+    wallet: PropTypes.number.isRequired
 }

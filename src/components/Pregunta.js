@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Error } from './Error';
+import PropTypes from 'prop-types'
+
 
 export const Pregunta = ({ setBudget, setWallet, setShowInputBudget }) => {
 
@@ -53,4 +55,11 @@ export const Pregunta = ({ setBudget, setWallet, setShowInputBudget }) => {
             
         </div>
     )
+}
+
+
+Pregunta.propTypes = {
+    setBudget: PropTypes.func.isRequired,
+    setWallet: PropTypes.func.isRequired,
+    setShowInputBudget: PropTypes.func.isRequired
 }

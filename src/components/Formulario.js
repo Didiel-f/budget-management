@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import shortid from 'shortid';
+import PropTypes from 'prop-types'
 import { Error } from './Error';
 
 export const Formulario = ({ setSpending, setCreateSpending }) => {
@@ -72,4 +73,9 @@ export const Formulario = ({ setSpending, setCreateSpending }) => {
             
         </form>
     )
+}
+
+Formulario.propTypes = {
+    setSpending: PropTypes.func.isRequired,
+    setCreateSpending: PropTypes.func.isRequired
 }
